@@ -1,0 +1,57 @@
+C:\Users\GUEST\Documents\test>git clone https://github.com/zimindkp/highestprofit workingdirectory
+Cloning into 'workingdirectory'...
+remote: Enumerating objects: 3448, done.
+remote: Counting objects: 100% (3448/3448), done.
+remote: Compressing objects: 100% (3177/3177), done.
+remote: Total 3448 (delta 239), reused 3412 (delta 217), pack-reused 0
+Receiving objects: 100% (3448/3448), 36.30 MiB | 12.23 MiB/s, done.
+Resolving deltas: 100% (239/239), done.
+Updating files: 100% (4107/4107), done.
+
+C:\Users\GUEST\Documents\test>cd workingdirectory
+
+C:\Users\GUEST\Documents\test\workingdirectory>run.bat
+
+C:\Users\GUEST\Documents\test\workingdirectory>echo off
+Standalone file is ready to run
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  837k  100  837k    0     0   837k      0  0:00:01 --:--:--  0:00:01 2056k
+05/10/2021  19:57           857,128 data.csv
+
+Number of rows in file are:  25500
+
+Number of rows after purging non-numeric values for profit are:  25131
+
+Top 20 rows with the highest profit values:
+       Year  Rank                 Company  Revenue (in millions)  Profit (in millions)
+25001  2005     2             Exxon Mobil               270772.0               25330.0
+22001  1999     2              Ford Motor               144416.0               22071.0
+24501  2004     2             Exxon Mobil               213199.0               21510.0
+24507  2004     8               Citigroup                94713.0               17853.0
+23000  2001     1             Exxon Mobil               210392.0               17720.0
+25007  2005     8               Citigroup               108276.0               17046.0
+25004  2005     5        General Electric               152363.0               16593.0
+23501  2002     2             Exxon Mobil               191581.0               15320.0
+24005  2003     6               Citigroup               100789.0               15276.0
+24504  2004     5        General Electric               134187.0               15002.0
+25017  2005    18   Bank of America Corp.                63324.0               14143.0
+23506  2002     7               Citigroup               112022.0               14126.0
+24004  2003     5        General Electric               131698.0               14118.0
+23505  2002     6        General Electric               125913.0               13684.0
+23005  2001     6               Citigroup               111826.0               13519.0
+25005  2005     6           ChevronTexaco               147967.0               13328.0
+23004  2001     5        General Electric               129853.0               12735.0
+23009  2001    10  Verizon Communications                64707.0               11797.0
+24002  2003     3             Exxon Mobil               182466.0               11460.0
+25023  2005    24                  Pfizer                52921.0               11361.0
+
+C:\Users\GUEST\Documents\test\workingdirectory\dist\highest_profit>dir   | findstr "data2.json"
+05/10/2021  19:57         2,775,794 data2.json
+
+All tasks completed successfully
+
+C:\Users\GUEST\Documents\test\workingdirectory\dist\highest_profit>pause
+Press any key to continue . . .
+
+C:\Users\GUEST\Documents\test\workingdirectory\dist\highest_profit>
