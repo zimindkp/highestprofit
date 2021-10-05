@@ -22,6 +22,11 @@ This was tested on a Windows machine and as such, will be using the included run
   
 2. Execute the run.bat script 
 
+```bash
+cd workingdirectory
+run.bat
+```
+
 3. (Optional) Delete the local repository if no longer needer
 
 ```bash
