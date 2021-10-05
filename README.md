@@ -47,7 +47,7 @@ Check and make sure your solution produces three answers as printed output. And 
 
 ## Design
 
-The main script run is highest_profit.py, included in this repository. I used the pandas library as I am familiar with it and suitable for the data analysis and manipulation required. I also use the json and numpy libraries for generating the JSON file and validating numerical data respectively. Since there are a number of dependencies, I packaged the whole program including the libraries needed into a standalone executable using [Pyinstaller.]((https://pyinstaller.readthedocs.io/en/stable/). 
+The main script run is highest_profit.py, included in this repository. I used the [pandas](https://pandas.pydata.org/) library as I am familiar with it and suitable for the data analysis and manipulation required. I also use the json and numpy libraries for generating the JSON file and validating numerical data respectively. Since there are a number of dependencies, I packaged the whole program including the libraries needed into a standalone executable using [Pyinstaller.](https://pyinstaller.readthedocs.io/en/stable/). 
 
 I did my testing on a Windows machine and have included a run.bat script, as well as some output from my testing to show the results (testrun.log). The instructions above and run.bat script should guide you to the working directory and location of the packaged solution to run with no issues. 
 
