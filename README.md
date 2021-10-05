@@ -1,4 +1,4 @@
-# highestprofit
+ # highestprofit
 
 **Summary:** Read a CSV file containing corporate profits over the years and create JSON format data and look for highest profit values in the data.
 
@@ -14,6 +14,28 @@ Full instructions found [here.](https://github.com/bobbae/gcp/tree/main/challeng
 
 ## Instructions to run the program
 This was tested on a Windows machine and as such, will be using the included run.bat script
+
+
+1. Download the repository to your local machine
+
+  ` git clone https://github.com/zimindkp/highestprofit workingdirectory`
+  
+2. Execute the run.bat script 
+
+3. (Optional) Delete the local repository if no longer needer
+
+```bash
+cd workingdirectory
+del .git
+cd ..
+del workingdirectory /s /q
+```
+
+**What the run.bat script does:**
+- Navigates to the working directory for the standalone executable (dist/highest_profit)
+- Downloads the data.csv file as raw format
+- Executes the standalone executable highest_profit.exe
+- Verifies a data2.json file was created in the current directory
 
 ## Verification
 Check and make sure your solution produces three answers as printed output. And a file called data2.json is produced.
