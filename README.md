@@ -44,3 +44,12 @@ del workingdirectory /s /q
 
 ## Verification
 Check and make sure your solution produces three answers as printed output. And a file called data2.json is produced.
+
+## Design
+
+The main script run is highest_profit.py, included in this repository. I used the pandas library as I am familiar with it and suitable for the data analysis and manipulation required. I also use the json and numpy libraries for generating the JSON file and validating numerical data respectively. Since there are a number of dependencies, I packaged the whole program including the libraries needed into a standalone executable using [Pyinstaller.]((https://pyinstaller.readthedocs.io/en/stable/). 
+
+I did my testing on a Windows machine and have included a run.bat script, as well as some output from my testing to show the results (testrun.log). The instructions above and run.bat script should guide you to the working directory and location of the packaged solution to run with no issues. 
+
+If you have Python 3.6+ installed, you are welcome to run the highest_profit.py on your machine for further testing. The script successfully outputs the number of rows, then purges any rows with non-numerical values for "profit". It then converts the remaining rows with profit values to a signed datatype, then writes it to the json file in the same working directory. Lastly, the remaining data is sorted by profits in ascending order, and the top 20 highest profits are displayed.
+
