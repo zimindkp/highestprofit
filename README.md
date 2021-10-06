@@ -27,13 +27,13 @@ cd workingdirectory
 run.bat
 ```
 
-3. (Optional) Delete the local repository if no longer needer
+3. (Optional) Delete the local repository if no longer needed
 
 ```bash
 cd workingdirectory
-del .git
+git rm -r -q .
 cd ..
-del workingdirectory /s /q
+rmdir workingdirectory /s /q
 ```
 
 **What the run.bat script does:**
@@ -52,4 +52,8 @@ The main script run is highest_profit.py, included in this repository. I used th
 I did my testing on a Windows machine and have included a run.bat script, as well as some output from my testing to show the results (testrun.log). The instructions above and run.bat script should guide you to the working directory and location of the packaged solution to run with no issues. 
 
 If you have Python 3.6+ installed, you are welcome to run the highest_profit.py on your machine for further testing. The script successfully outputs the number of rows, then purges any rows with non-numerical values for "profit". It then converts the remaining rows with profit values to a signed datatype, then writes it to the json file in the same working directory. Lastly, the remaining data is sorted by profits in ascending order, and the top 20 highest profits are displayed.
+
+## Testing
+
+Tested a run using the instructions above and logged into the testrun.log file.
 
