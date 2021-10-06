@@ -15,9 +15,6 @@ highest_profit.exe
 REM verify the data2.json file was created
 if not exist data2.json goto failure
 @echo:
-dir | findstr "data2.json"
-@echo:
-@echo All tasks completed successfully
-
+REM successful completion here
 :failure
 pause
