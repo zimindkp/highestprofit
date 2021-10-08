@@ -5,6 +5,7 @@
 
 import pandas as pd
 import urllib.request
+import numpy as np
 
 # PART 1
 # Setting url for file download as "raw"
@@ -13,6 +14,7 @@ response = urllib.request.urlopen(url)
 
 # Read this url into memory as a csv dataframe
 data = pd.read_csv(response)
+data3 = response.read()
 
 # Count number of rows - adding 1 to account for the first row as a header
 print('Number of rows in file are: ', len(data)+1)
@@ -26,7 +28,7 @@ print("\nNumber of rows after purging non-numeric values for profit are: ", data
 # Convert numbers to signed
 data["Profit (in millions)"] = pd.to_numeric(data["Profit (in millions)"], downcast="signed")
 
-# Write to a JSON file with all rows that had Nan profit values removed
+# Write to a JSON file with
 with open('data2.json', 'w', encoding='utf-8') as f:
     f.write(data.to_json(orient='records', lines=True))
 
@@ -36,4 +38,5 @@ data.sort_values(by='Profit (in millions)', inplace=True)
 # Output of the top 20 values
 print("\nTop 20 rows with the highest profit values:")
 print(data.iloc[::-1].head(20))
+
 
