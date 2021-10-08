@@ -38,7 +38,6 @@ rmdir workingdirectory /s /q
 
 **What the run.bat script does:**
 - Navigates to the working directory for the standalone executable (dist/highest_profit)
-- Downloads the data.csv file as raw format
 - Executes the standalone executable highest_profit.exe
 - Verifies a data2.json file was created in the current directory
 
